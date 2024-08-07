@@ -1,6 +1,8 @@
 version : "3.3"
 services :
   web :
-     image : ditinusdevops/project_1:test1
+  build: .
+     volumes :
+       - .:/usr/local/apache2/htdocs/
      ports :
          - "8082:80"
